@@ -1,0 +1,39 @@
+{
+    "name": "mumianzi/laravel-intl",
+    "description": "A Laravel intl list package",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "mumianzi",
+            "email": "d@sq.mk"
+        }
+    ],
+    "homepage": "https://github.com/mumianzi/laravel-intl",
+    "keywords": [
+        "Laravel",
+        "Countries"
+    ],
+    "require": {
+        "umpirsky/country-list": "^2.0",
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mumianzi\\LaravelIntl\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mumianzi\\LaravelIntl\\IntlServiceProvider"
+            ],
+            "aliases": {
+                "Countries": "Mumianzi\\LaravelIntl\\Facades\\Countries"
+            }
+        }
+    }
+}
